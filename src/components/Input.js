@@ -6,15 +6,23 @@ class Input extends Component {
     count: 0
   }
 
-  handleChange = (event) => {
-    var latestCount = parseInt(event.target.value);
-    this.setState({count: latestCount});
+  handleBlur = (event) => {
+    if (event.target.value === "") {
+      this.setState({count: 0});
+    }
+  }
 
-    this.props.updateTotal(this.props.value, latestCount);
+  handleChange = (event) => {
+    this.setState({count: event.target.value});
+
+    let intCount = parseInt(event.target.value);
+    if (!isNaN(intCount)) {
+      this.props.updateTotal(this.props.grouping, this.props.value, intCount);
+    }
   }
 
   render() {
-    var containerClasses = "column is-1-desktop " + (this.props.mobileClassName || "is-4-mobile")
+    let containerClasses = "column is-1-desktop is-3-mobile";
 
     return (
       <div className={containerClasses}>
@@ -23,6 +31,7 @@ class Input extends Component {
           <div className="control">
             <input
               className="input is-large"
+              onBlur={this.handleBlur}
               onChange={this.handleChange}
               min="0"
               type="number"
@@ -34,6 +43,7 @@ class Input extends Component {
 }
 
 Input.propTypes = {
+  grouping: PropTypes.string.isRequired,
   label: PropTypes.string.isRequired,
   mobileClassName: PropTypes.string,
   updateTotal: PropTypes.func.isRequired,
