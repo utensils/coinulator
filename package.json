@@ -1,6 +1,7 @@
 {
   "name": "coinulator",
   "version": "0.1.0",
+  "homepage": "https://utensils.io/coinulator",
   "private": true,
   "dependencies": {
     "react": "^16.6.1",
