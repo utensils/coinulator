@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/coinulator/precache-manifest.ef6a137ea848e5c232d06afaa084b19f.js"
+  "https://utensils.io/coinulator/precache-manifest.320c2267b130d7f8f23359c4132a92af.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/coinulator/index.html", {
+workbox.routing.registerNavigationRoute("https://utensils.io/coinulator/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });
