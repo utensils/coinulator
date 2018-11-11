@@ -1,11 +1,11 @@
 {
-  "main.js": "/colorsplash/static/js/main.0b668f55.chunk.js",
-  "main.js.map": "/colorsplash/static/js/main.0b668f55.chunk.js.map",
-  "static/js/1.3da870a3.chunk.js": "/colorsplash/static/js/1.3da870a3.chunk.js",
-  "static/js/1.3da870a3.chunk.js.map": "/colorsplash/static/js/1.3da870a3.chunk.js.map",
-  "runtime~main.js": "/colorsplash/static/js/runtime~main.75099a6b.js",
-  "runtime~main.js.map": "/colorsplash/static/js/runtime~main.75099a6b.js.map",
-  "index.html": "/colorsplash/index.html",
-  "precache-manifest.44a761e73120fe8ef0afb2d507d4fb43.js": "/colorsplash/precache-manifest.44a761e73120fe8ef0afb2d507d4fb43.js",
-  "service-worker.js": "/colorsplash/service-worker.js"
+  "main.js": "/coinulator/static/js/main.db871360.chunk.js",
+  "main.js.map": "/coinulator/static/js/main.db871360.chunk.js.map",
+  "static/js/1.3da870a3.chunk.js": "/coinulator/static/js/1.3da870a3.chunk.js",
+  "static/js/1.3da870a3.chunk.js.map": "/coinulator/static/js/1.3da870a3.chunk.js.map",
+  "runtime~main.js": "/coinulator/static/js/runtime~main.3c7d372a.js",
+  "runtime~main.js.map": "/coinulator/static/js/runtime~main.3c7d372a.js.map",
+  "index.html": "/coinulator/index.html",
+  "precache-manifest.ef6a137ea848e5c232d06afaa084b19f.js": "/coinulator/precache-manifest.ef6a137ea848e5c232d06afaa084b19f.js",
+  "service-worker.js": "/coinulator/service-worker.js"
 }
