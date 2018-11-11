@@ -1,11 +1,11 @@
 {
-  "main.js": "https://utensils.io/coinulator/static/js/main.7d594c5e.chunk.js",
-  "main.js.map": "https://utensils.io/coinulator/static/js/main.7d594c5e.chunk.js.map",
+  "main.js": "https://utensils.io/coinulator/static/js/main.079535f2.chunk.js",
+  "main.js.map": "https://utensils.io/coinulator/static/js/main.079535f2.chunk.js.map",
   "static/js/1.3da870a3.chunk.js": "https://utensils.io/coinulator/static/js/1.3da870a3.chunk.js",
   "static/js/1.3da870a3.chunk.js.map": "https://utensils.io/coinulator/static/js/1.3da870a3.chunk.js.map",
   "runtime~main.js": "https://utensils.io/coinulator/static/js/runtime~main.5a8e50b7.js",
   "runtime~main.js.map": "https://utensils.io/coinulator/static/js/runtime~main.5a8e50b7.js.map",
   "index.html": "https://utensils.io/coinulator/index.html",
-  "precache-manifest.320c2267b130d7f8f23359c4132a92af.js": "https://utensils.io/coinulator/precache-manifest.320c2267b130d7f8f23359c4132a92af.js",
+  "precache-manifest.70e89971e7aeb431448b2bf36f99758f.js": "https://utensils.io/coinulator/precache-manifest.70e89971e7aeb431448b2bf36f99758f.js",
   "service-worker.js": "https://utensils.io/coinulator/service-worker.js"
 }
