@@ -21,11 +21,15 @@ class Input extends Component {
     }
   }
 
-  render() {
-    let containerClasses = "column is-1-desktop is-3-mobile";
+  componentWillReceiveProps(nextProps){
+    if (nextProps.count !== undefined && nextProps.count !== this.props.count) {
+      this.setState({ count: nextProps.count });
+    }
+  }
 
+  render() {
     return (
-      <div className={containerClasses}>
+      <div className="column is-1-desktop is-3-mobile">
         <div className="field has-text-centered">
           <label className="label">{this.props.label}</label>
           <div className="control">
@@ -43,9 +47,9 @@ class Input extends Component {
 }
 
 Input.propTypes = {
+  count: PropTypes.number,
   grouping: PropTypes.string.isRequired,
   label: PropTypes.string.isRequired,
-  mobileClassName: PropTypes.string,
   updateTotal: PropTypes.func.isRequired,
   value: PropTypes.number.isRequired
 };

@@ -5,14 +5,17 @@ import Input from './Input';
 
 class Group extends Component {
   render() {
+    let { counts, currency, grouping } = this.props;
     var inputs = [];
 
-    for(let key in this.props.values) {
+    for(let key in currency) {
+      let value = currency[key];
       inputs.push(<Input
-        grouping={this.props.grouping}
+        grouping={grouping}
         key={key}
         label={key}
-        value={this.props.values[key]}
+        count={counts[value]}
+        value={value}
         updateTotal={this.props.updateTotal}
       />)
     }
@@ -31,10 +34,11 @@ class Group extends Component {
 }
 
 Group.propTypes = {
-  grouping: PropTypes.string.isRequired,
+  counts: PropTypes.object.isRequired,
   label: PropTypes.string.isRequired,
-  updateTotal: PropTypes.func.isRequired,
-  values: PropTypes.object.isRequired
+  grouping: PropTypes.string.isRequired,
+  currency: PropTypes.object.isRequired,
+  updateTotal: PropTypes.func.isRequired
 };
 
 export default Group;

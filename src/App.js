@@ -29,6 +29,25 @@ class App extends Component {
     }
   }
 
+  handleClear = (event) => {
+    event.preventDefault();
+
+    this.setState({
+      values: {
+        banknotes: this.zeroValues(this.state.values.banknotes),
+        coins: this.zeroValues(this.state.values.coins)
+      }
+    })
+  }
+
+  zeroValues = (values) => {
+    for(let key in values) {
+      values[key] = 0;
+    }
+
+    return values;
+  }
+
   updateTotal = (grouping, value, quantity) => {
     var { values } = this.state;
     values[grouping][value] = quantity;
@@ -42,9 +61,26 @@ class App extends Component {
     return (
       <div className="container has-text-centered">
         <Total format={currency.format} values={values}/>
-        <Group grouping="banknotes" label={currency.format.banknotes} values={currency.banknotes} updateTotal={this.updateTotal} />
+        <Group
+          counts={values.banknotes}
+          grouping="banknotes"
+          label={currency.format.banknotes}
+          currency={currency.banknotes}
+          updateTotal={this.updateTotal} />
         <hr />
-        <Group grouping="coins" label={currency.format.coins} values={currency.coins} updateTotal={this.updateTotal} />
+        <Group
+          counts={values.coins}
+          grouping="coins"
+          label={currency.format.coins}
+          currency={currency.coins}
+          updateTotal={this.updateTotal} />
+        <br />
+        <button className="button is-danger" onClick={this.handleClear}>
+          <span>Clear</span>
+          <span className="icon is-small">
+            <i className="fas fa-times"></i>
+          </span>
+        </button>
       </div>);
   }
 }
