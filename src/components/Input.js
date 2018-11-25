@@ -7,18 +7,17 @@ class Input extends Component {
   }
 
   handleBlur = (event) => {
-    if (event.target.value === "") {
-      this.setState({count: 0});
+    let intCount = parseInt(event.target.value);
+    if (isNaN(intCount)) {
+      intCount = 0;
     }
+
+    this.setState({count: intCount});
+    this.props.updateTotal(this.props.grouping, this.props.value, intCount);
   }
 
   handleChange = (event) => {
     this.setState({count: event.target.value});
-
-    let intCount = parseInt(event.target.value);
-    if (!isNaN(intCount)) {
-      this.props.updateTotal(this.props.grouping, this.props.value, intCount);
-    }
   }
 
   componentWillReceiveProps(nextProps){
