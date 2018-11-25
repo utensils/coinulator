@@ -1,7 +1,7 @@
 self.__precacheManifest = [
   {
-    "revision": "0956dd3c90f1bd444120",
-    "url": "https://utensils.io/coinulator/static/js/main.0956dd3c.chunk.js"
+    "revision": "f1c6099e0a4842d3af70",
+    "url": "https://utensils.io/coinulator/static/js/main.f1c6099e.chunk.js"
   },
   {
     "revision": "3da870a3c1c4b41662f2",
@@ -12,7 +12,7 @@ self.__precacheManifest = [
     "url": "https://utensils.io/coinulator/static/js/runtime~main.5a8e50b7.js"
   },
   {
-    "revision": "d2654766b42ef513811237e366fadba6",
+    "revision": "da7a66c41c1dc83373ee4a795cb261bd",
     "url": "https://utensils.io/coinulator/index.html"
   }
 ];
